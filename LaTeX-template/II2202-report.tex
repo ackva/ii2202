@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 
-\title{Supporting personnel in warehouses with the inertial measurement unit}
+\title{Supporting personnel in warehouses with an inertial measurement unit}
 \author{
         \textsc{Adrian Ackva}
             \qquad
@@ -153,8 +153,8 @@ Your abstract here.
 This document requires readers to be familiar with terms and concepts described in \mbox{RFC~1235} \cite{john_ioannidis_coherent_1991}. For clarity we summarize some of these terms and give a short description of them before presenting them in next sections.
 
 \begin{basedescript}{\desclabelstyle{\pushlabel}\desclabelwidth{10em}}
-\item[IPv4]					Internet Protocol version 4 (RFC~791 \cite{postel_internet_1981})
-\item[IPv6]					Internet Protocol version 6 (RFC~2460 \cite{deering_internet_1998})
+\item[IMU]					Inertial Measurement Unit
+\item[RFID]					Radio-Frequency Identification
 \end{basedescript}
 
 
@@ -163,35 +163,52 @@ This document requires readers to be familiar with terms and concepts described 
 \label{sect:introduction}
 %% Longer problem statement
 %% General introduction to the area
+In the past, several companies introduced certain devices to track motions of their employees and goods in warehouses in order to support employees there. Due to high labor cost, it is crucial that picking items is efficient \cite{frazelle2002}. These are either dedicated devices, using different ways to operate (e.g. wristbands using ultrasonic or voice-assisted technology \cite{bergerLudwig2007}. Amazon wants to measure arm movements and eventually give haptic feedback to the worker. This creates technological challenges to be precise enough with a low error rate. However, it raises ethical questions. For instance, will employers abuse their tracking capabilities to put pressure on employees, or track during breaks or other private activities?
 
-It was conjectured in \cite{john_ioannidis_coherent_1991} that multicasting
-could provide gains by \ldots.
-
-See also \cite{a_new_synchronization_protocol_for_sqlite_databases},
-the paper \cite{anand_kannan_n-ary_2012}, 
-and the book \cite{brent_s._baxter_standard_1982}.
+\subsection{Problem Statement}
+\label{sect:problem}
+Wristband solutions mentioned in the previous section are either not dedicated to supporting activities in warehouses, e.g. fitness wristbands, or have not been made commercially available \cite{bergerLudwig2007}. Common warehouse management technologies, for instance, pick-by-voice, radio-frequency identification (RFID), or barcodes, support workers during their job \cite{battini2015}. However, workers still do mistakes which require post-correction or compensations implying a higher cost. Goods can lose traceability when wrongly placed. This decreases productivity and slows down the speed of delivery. Finally, it results in higher cost. Looking at the above mentioned initiative from Amazon, it can be examined whether wristbands can be used to identify errors by humans when placing items.
 
 \subsection{Theoretical framework/literature study}
 \label{sect:framework}
 
-xxxxx xxxx xxxx 
+( ---- THIS SECTION HERE SEEMS A BIT OUT OF CONTEXT .... IT IS MORE "BACKGROUND" than "literature study")
+
+"An inertial measurement unit (IMU) is a small and portable device that combines information obtained from multiple electromechanical sensors (e.g. accelerometers, gyroscopes, and magnetometers)"\cite{schall2016}. The usage of IMU to detect human body motion has been proofed by several studies in the past \cite{schall2016} \cite{tao2018} \cite{georgi2015}.
+
+All IMU sensors are sourceless, meaning that they work independently. However, especially in small wearable devices, they are very noisy. \cite{gallagher2004efficient}. A common method to reduce this noise is the Kalman  filter \cite{kalman1960new}. It allows to reduce the impact of the noise by mathematical calculations. Kalman also provides a prediction feature to correct the gyroscope drift \cite{Welch95anintroduction} \cite{Lee2009}.
+
 
 \subsection{Research questions, hypotheses}
 \label{sect:questions}
 
-We saw that several solutions exist for displacement tracking using ultrasonic sensors. We would like to experiment with an IMU and find out if it is capable of executing similar measurements. 
+Regarding at recent literature, we can see that several solutions exist for displacement tracking using ultrasonic sensors \cite{QiYongbin2014Awwu}. However, we would like to experiment with an IMU and find out if it is capable of executing similar measurements. 
+Our hypothesis is that IMU would be precise enough to detect placing an item had been inside the correct container or not. In this scenario we assume that the containers are around the size of 50-100 cm wide and long.
 
-Out hypothesis is that we can correctly decide whether an item had been placed inside the correct container or not. In this scenario we assume that the containers are around the size of 50-100 cm wide and long.
+\subsection{Ethics and sustainability}
+\label{sect:ethics}
+
+By introducing tracking devices for employees, a number of side effects and ethical questions arise, such as: Can the employers abuse the information collected by the wristbands to put pressure on the employee?
 
 
 \section{Method(s)}
 \label{sec:method}
-We implement our own software for Android operating system\cite{Android}. We use Android Studio \cite{Android_Studio} to implement our application and to deploy it to the mobile device. We decided to use Java programming language \cite{Java} for the implementation. Our test device is a Xiaomi Redmi Note 4 mobile phone \cite{Redmi_Note4} and its inbuilt measurement units.
-
-We implement an application according for the mentioned system. For this, we use already existing libraries on GitHub to avoid implementing complex algorithms such as a Kalman filter\cite{Kalman_filter_book}. In our application we use two GitHub projects. After collecting the sensor data, we use FSensor \cite{KalebKE_2018} to filter the data. This helps us filter out the noise and keep the useful data. This step is an important step as the raw data is very noisy. -----------------------------------------------------------------------citation here if we can find something-----------------------------------------------------------------------------. Then the acceleration data is integrated twice to get position and at this point another GitHub repository is used. It is the GraphView \cite{Graphview}. This provides a simple way to plot data on the phone screen. Using this method, the X and Y position data is displayed and the results can be seen. After starting the app, the tracking starts and automatically stops after a few seconds, concluding the results. This time is enough to perform the movement of placing the item from one container to another but short enough not to accumulate too much error increasing the accuracy of the final position.
 
 
+The method of this project is empirical prototyping. A regular smartphone will be used for the app. Simple software will run on the device that will analyze the sensor output data. Creating our own microprocessor (Arduino) device would require more time than is available during the course. We believe a smartphone is the best way to approach this problem as we already have such a device and it already contains the IMU and easy to write applications for this Android smartphone.
 
+In order to test the prototype, we will conduct experiments, rather than rely on simulations, e.g. an Android studio development environment. We rather ask users to move items between two containers. The following setup is made: placing two square boxes of tens of centimeters close to each other. Using the hand with the “wristband” (smartphone attached to wrist), the balls in one container are grabbed and moved to the other container one by one. Negative tests are done, too. (----- EXPLAIN THIS!!!! ------) The app will detect if the placement is correct or not. These experiments will be recorded (---- Will you make a video?? ----) and analyzed.
+Furthermore, publications will be analyzed in order to have a clear understanding of the current technologies used.
+
+The goal is to conduct an experiment that accurately measures the placement of items between two containers with aid of IMU data. The data from the experiment should give us a clear understanding if an IMU is capable of fulfilling the needs. This result can be used to validate our hypothesis.
+
+
+
+\subsection{Implementation}
+\label{sect:implementation}
+We implement our own software for Android operating system\cite{Android}. The integrated development environment for our application and to deploy it to the mobile device is Android Studio \cite{Android_Studio} . We decided to use Java programming language \cite{Java} for this project. Our test device is a Xiaomi Redmi Note 4 mobile phone \cite{Redmi_Note4} and its inbuilt measurement units. A second device is a Motorola G5 Plus \cite{motoG5}.
+
+We implement an application according for the mentioned system. ( ----- ????? -----) For this, we  take advatage of already existing libraries on GitHub to avoid implementing complex algorithms, especially Kalman filter \cite{Kalman_filter_book}. In our application, we use two GitHub \cite{github} projects. (-- ????? --) After collecting the sensor data, we use FSensor \cite{KalebKE_2018} to filter the data. This helps us filter out the noise and keep the useful data. This step is an important step as the raw data is very noisy, as mentioned in section XYZ (!!!!). . In the next step, the acceleration data is integrated twice to get the position. At this point, GraphView \cite{Graphview}, another GitHub repository, is used. It provides a simple way to plot data on the phone screen. This method displays the X and Y position data and the results can be viewed. After starting the app, the tracking starts and automatically stops after a few seconds, concluding the results. This time is long enough to perform the movement of placing the item from one container to another but short enough not to accumulate too much error increasing the accuracy of the final position.
 
 \section{Results and Analysis}
 \label{sec:results}

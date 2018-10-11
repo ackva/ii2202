@@ -1,8 +1,18 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: II2202-report.aux
 The style file: myIEEEtran.bst
 Database file #1: II2202-report.bib
+Warning--I didn't find a database entry for "john_ioannidis_coherent_1991"
 -- myIEEEtran.bst based upon IEEEtran.bst version 1.13 based upon (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Name 1 in "{Samuel M. Berger}, and {Timothy D. Ludwig}" has a comma at the end for entry bergerLudwig2007
+while executing---line 2494 of file myIEEEtran.bst
+Name 1 in "{Wenjin Tao}, {Ze-Hao Lai}, {Ming C. Leu}, and {Zhaozheng Yin}" has a comma at the end for entry schall2016
+while executing---line 2494 of file myIEEEtran.bst
+Name 1 in "{Wenjin Tao}, {Ze-Hao Lai}, {Ming C. Leu}, and {Zhaozheng Yin}" has a comma at the end for entry tao2018
+while executing---line 2494 of file myIEEEtran.bst
+Name 1 in "{Marcus Georgi}, {Christoph Amma}, and {Tanja Schultz}" has a comma at the end for entry georgi2015
+while executing---line 2494 of file myIEEEtran.bst
 
 Done.
+(There were 4 error messages)

@@ -21,54 +21,76 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{john_ioannidis_coherent_1991}
-\BIBentryALTinterwordspacing
-J.~Ioannidis and G.~Q.~M. Jr., ``Coherent file distribution protocol,''
-  \emph{Internet Request for Comments}, vol. {RFC} 1235 {(Experimental)}, Jun.
-  1991. [Online]. Available: \url{http://www.rfc-editor.org/rfc/rfc1235.txt}
-\BIBentrySTDinterwordspacing
-
-\bibitem{postel_internet_1981}
-\BIBentryALTinterwordspacing
-J.~Postel, ``Internet protocol,'' \emph{Internet Request for Comments}, vol.
-  {RFC} 791 {(Standard)}, Sep. 1981, updated by {RFC} 1349. [Online].
-  Available: \url{http://www.rfc-editor.org/rfc/rfc791.txt}
-\BIBentrySTDinterwordspacing
-
-\bibitem{deering_internet_1998}
-\BIBentryALTinterwordspacing
-S.~Deering and R.~Hinden, ``Internet protocol, version 6 {(IPv6)}
-  specification,'' \emph{Internet Request for Comments}, vol. {RFC} 2460
-  {(Draft} Standard), Dec. 1998, updated by {RFCs} 5095, 5722, 5871. [Online].
-  Available: \url{http://www.rfc-editor.org/rfc/rfc2460.txt}
-\BIBentrySTDinterwordspacing
-
-\bibitem{a_new_synchronization_protocol_for_sqlite_databases}
-\BIBentryALTinterwordspacing
-S.~Long, ``Database synchronization between devices: A new synchronization
-  protocol for sqlite databases,'' Master's thesis, KTH, School of Information
-  and Communication (ICT), Stockholm, May 2011, {TRITA-ICT-EX-}2011:88.
-  [Online]. Available:
-  \url{http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-46712}
-\BIBentrySTDinterwordspacing
-
-\bibitem{anand_kannan_n-ary_2012}
-\BIBentryALTinterwordspacing
-{Anand Kannan}, {Gerald Q. Maguire Jr.}, {Ayush Sharma}, {Volker Fusenig}, and
-  {Peter Schoo}, ``N-ary tree based key distribution in a network as a service
-  provisioning model,'' in \emph{{ICACCI} '12 Proceedings of the International
-  Conference on Advances in Computing, Communications and Informatics}.\hskip
-  1em plus 0.5em minus 0.4em\relax {ACM} Press, 2012. doi:
-  10.1145/2345396.2345550. ISBN 9781450311960 p. 952. [Online]. Available:
-  \url{http://dl.acm.org/citation.cfm?doid=2345396.2345550}
-\BIBentrySTDinterwordspacing
-
-\bibitem{brent_s._baxter_standard_1982}
-{Brent S. Baxter}, {Lewis E. Hitchner}, and {Gerald Q. Maguire Jr.}, \emph{A
-  standard format for digital image exchange}.\hskip 1em plus 0.5em minus
-  0.4em\relax New York {N.Y.}: Published for the American Association of
-  Physicists in Medicine by the American Institute of Physics, 1982. ISBN
+\bibitem{frazelle2002}
+E.~Frazelle, \emph{World-class Warehousing and Material Handling}.\hskip 1em
+  plus 0.5em minus 0.4em\relax New York {N.Y.}: McGraw Hill, 2002. ISBN
   9780883184080
+
+\bibitem{bergerLudwig2007}
+\BIBentryALTinterwordspacing
+{Samuel M. Berger} and {Timothy D. Ludwig}, ``Reducing warehouse employee
+  errors using voice-assisted technology that provided immediate feedback,''
+  \emph{Journal of Organizational Behavior Management}, vol.~27, Jun. 2007.
+  [Online]. Available: \url{https://doi.org/10.1300/J075v27n01_01}
+\BIBentrySTDinterwordspacing
+
+\bibitem{battini2015}
+\BIBentryALTinterwordspacing
+A.~{Daria Battini}, {Martina Calzavara} and {Fabio Sgarbossa}, ``A comparative
+  analysis of different paperless picking systems,'' \emph{Industrial
+  Management and Data Systems}, vol. 115, pp. 483--503, 2015. [Online].
+  Available: \url{https://doi.org/10.1108/IMDS-10-2014-0314}
+\BIBentrySTDinterwordspacing
+
+\bibitem{schall2016}
+\BIBentryALTinterwordspacing
+M.~{Wenjin Tao}, {Ze-Hao Lai} and {Zhaozheng Yin}, ``Accuracy and repeatability
+  of an inertial measurement unit system for field-based occupational
+  studies,'' \emph{Ergonomics}, vol.~59, p. 591–602, Apr. 2016. [Online].
+  Available: \url{DOI: 10.1080/00140139.2015.1079335}
+\BIBentrySTDinterwordspacing
+
+\bibitem{tao2018}
+\BIBentryALTinterwordspacing
+------, ``Worker activity recognition in smart manufacturing using imu and semg
+  signals with convolutional neural networks,'' \emph{Procedia Manufacturing},
+  vol.~26, pp. 1159--1166, Apr. 2017. [Online]. Available: \url{DOI:
+  10.1016/j.promfg.2018.07.152}
+\BIBentrySTDinterwordspacing
+
+\bibitem{georgi2015}
+\BIBentryALTinterwordspacing
+C.~{Marcus Georgi} and {Tanja Schultz}, ``Recognizing hand and finger gestures
+  with imu based motion and emg based muscle activity sensing,''
+  \emph{Proceedings of the International Joint Conference on Biomedical
+  Engineering Systems and Technologies}, vol.~4, p. 99–108, Apr. 2015.
+  [Online]. Available: \url{DOI: 10.5220/0005276900990108}
+\BIBentrySTDinterwordspacing
+
+\bibitem{gallagher2004efficient}
+A.~Gallagher, Y.~Matsuoka, and W.-T. Ang, ``An efficient real-time human
+  posture tracking algorithm using low-cost inertial and magnetic sensors,'' in
+  \emph{Intelligent Robots and Systems, 2004.(IROS 2004). Proceedings. 2004
+  IEEE/RSJ International Conference on}, vol.~3.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2004, pp. 2967--2972.
+
+\bibitem{kalman1960new}
+R.~E. Kalman, ``A new approach to linear filtering and prediction problems,''
+  \emph{Journal of basic Engineering}, vol.~82, no.~1, pp. 35--45, 1960.
+
+\bibitem{Welch95anintroduction}
+G.~Welch and G.~Bishop, ``An introduction to the kalman filter,'' 1995.
+
+\bibitem{Lee2009}
+\BIBentryALTinterwordspacing
+H.-J. Lee and S.~Jung, ``Gyro sensor drift compensation by kalman filter to
+  control a mobile inverted pendulum robot system,'' in \emph{Proceedings of
+  the 2009 IEEE International Conference on Industrial Technology}, ser. ICIT
+  '09.\hskip 1em plus 0.5em minus 0.4em\relax Washington, DC, USA: IEEE
+  Computer Society, 2009. doi: 10.1109/ICIT.2009.4939502. ISBN
+  978-1-4244-3506-7 pp. 1--6. [Online]. Available:
+  \url{https://doi.org/10.1109/ICIT.2009.4939502}
+\BIBentrySTDinterwordspacing
 
 \bibitem{Android}
 \url{https://www.android.com/}, last accessed on 10-10-2018.
@@ -83,6 +105,10 @@ S.~Long, ``Database synchronization between devices: A new synchronization
 \bibitem{Redmi_Note4}
 \url{https://www.mi.com/in/note4/}, last accessed on 10-10-2018.
 
+\bibitem{motoG5}
+\url{https://www.motorola.com/us/products/moto-g-plus}, last accessed on
+  11-10-2018.
+
 \bibitem{Kalman_filter_book}
 \BIBentryALTinterwordspacing
 P.~Zarchan and H.~Musoff, \emph{Fundamentals of Kalman Filtering: A Practical
@@ -91,6 +117,9 @@ P.~Zarchan and H.~Musoff, \emph{Fundamentals of Kalman Filtering: A Practical
   Astronautics, Incorporated, 2000. ISBN 978-1-56347-455-2. [Online].
   Available: \url{https://books.google.se/books?id=AQxRAAAAMAAJ}
 \BIBentrySTDinterwordspacing
+
+\bibitem{github}
+\url{https://www.github.com}, last accessed on 11-10-2018.
 
 \bibitem{KalebKE_2018}
 \url{https://github.com/KalebKE/FSensor}, last accessed on 10-10-2018.
