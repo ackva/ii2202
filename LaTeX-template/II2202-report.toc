@@ -1,10 +1,12 @@
-\babel@toc {english}{}
-\babel@toc {english}{}
+\select@language {english}
+\select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {subsection}{\numberline {1.1}Theoretical framework/literature study}{2}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Ethics and sustainability}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.1}Problem Statement}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Theoretical framework/literature study}{2}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Research questions, hypotheses}{2}{subsection.1.3}
-\contentsline {section}{\numberline {2}Method(s)}{3}{section.2}
+\contentsline {subsection}{\numberline {1.4}Ethics and sustainability}{2}{subsection.1.4}
+\contentsline {section}{\numberline {2}Method(s)}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Implementation}{3}{subsection.2.1}
 \contentsline {section}{\numberline {3}Results and Analysis}{3}{section.3}
-\contentsline {section}{\numberline {4}Discussion}{3}{section.4}
-\contentsline {section}{\numberline {A}Insensible Approximation}{4}{appendix.A}
+\contentsline {section}{\numberline {4}Discussion}{4}{section.4}
+\contentsline {section}{\numberline {A}Insensible Approximation}{5}{appendix.A}

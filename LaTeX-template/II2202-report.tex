@@ -196,10 +196,12 @@ By introducing tracking devices for employees, a number of side effects and ethi
 
 
 The method of this project is empirical prototyping. A regular smartphone will be used for the app. Simple software will run on the device that will analyze the sensor output data. Creating our own microprocessor (Arduino) device would require more time than is available during the course. We believe a smartphone is the best way to approach this problem as we already have such a device and it already contains the IMU and easy to write applications for this Android smartphone.
-
+\\
+\\
 In order to test the prototype, we will conduct experiments, rather than rely on simulations, e.g. an Android studio development environment. We rather ask users to move items between two containers. The following setup is made: placing two square boxes of tens of centimeters close to each other. Using the hand with the “wristband” (smartphone attached to wrist), the balls in one container are grabbed and moved to the other container one by one. Negative tests are done, too. (----- EXPLAIN THIS!!!! ------) The app will detect if the placement is correct or not. These experiments will be recorded (---- Will you make a video?? ----) and analyzed.
 Furthermore, publications will be analyzed in order to have a clear understanding of the current technologies used.
-
+\\
+\\
 The goal is to conduct an experiment that accurately measures the placement of items between two containers with aid of IMU data. The data from the experiment should give us a clear understanding if an IMU is capable of fulfilling the needs. This result can be used to validate our hypothesis.
 
 
@@ -213,7 +215,18 @@ We implement an application according for the mentioned system. ( ----- ????? --
 \section{Results and Analysis}
 \label{sec:results}
 
-xxxxx xxxx xxxx 
+The run the app we created a few times and tested it by moving the phone. Fig.~\ref{fig:app1} shows an example picture of the result we can see on the phone screen after the measurement ends. Right now, the app needs more development but we can see on the upper graph that the phone was moved along the x-axis. The figure shows that the displacement was around one meter. The lower graph shows that there was a slight change of position along the y-axis which could also be just error. Under the graphs, we can see four numbers, which are currently not well-divided but the first two show the acceleration data of the x and y axis, respectively. The last two show the change of position in these axises. Finally, at the bottom, we can see the real-time acceleration of the phone.
+\\
+\\
+In conclusion, our current achievements are a position tracker algorithm and the visualization of the results. More tests are needed to be able to conduct a thorough analysis on the gathered data.
+
+\begin{figure}[H]
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{figures/app1}
+		\caption{Image of the position tracker app after conducting the test}
+		\label{fig:app1}
+	\end{center}
+\end{figure}
 
 \section{Discussion}
 \label{sec:discussion}
