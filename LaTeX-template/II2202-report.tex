@@ -200,16 +200,19 @@ The sustainability aspects of wristbands affect the bracelet itself rather than 
 \label{sec:method}
 
 
-The method of this project is empirical prototyping. A regular smartphone will be used for the app. Simple software will run on the device that will analyze the sensor output data. Creating our own microprocessor (Arduino) device would require more time than is available during the course. We believe a smartphone is the best way to approach this problem as we already have such a device and it already contains the IMU and easy to write applications for this Android smartphone.
+The method of this project is empirical prototyping and an experiment. A regular smartphone will be used for the app. Simple software will run on the device that will analyze the sensor output data. Creating our own microprocessor (Arduino) device would require more time than is available during the course. We believe a smartphone is the best way to approach this problem as we already have such a device and it already contains the IMU and easy to write applications for this Android smartphone.
 \\
 \\
+
+\subsection{Experiment}
+\label{sect:experiment}
+
 In order to test the prototype, we will conduct experiments, rather than rely on simulations, e.g. an Android studio development environment. We rather ask users to move items between two containers. The following setup is made: placing two square boxes of tens of centimeters close to each other. Using the hand with the “wristband” (smartphone attached to wrist), the balls in one container are grabbed and moved to the other container one by one. Negative tests are done, too. In this case, the items will be deliberately moved to a wrong place outside of the container. The app will detect if the placement is correct or not. We will consider a video recording of the experiment. We want to collect the data on the mobile device after every try.
 Furthermore, publications will be analyzed in order to have a clear understanding of the current technologies used.
 \\
 \\
-The goal is to conduct an experiment that accurately measures the placement of items between two containers with aid of IMU data. The data from the experiment should give us a clear understanding if an IMU is capable of fulfilling the needs. This result can be used to validate our hypothesis.
 
-\begin{figure}[H]
+\begin{figure}[!]
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{figures/experiment_setup}
 		\caption{Setup of the experiment (own representation)}
@@ -217,7 +220,9 @@ The goal is to conduct an experiment that accurately measures the placement of i
 	\end{center}
 \end{figure}
 
-\subsection{Implementation}
+We aim to conduct the experiment with a small number of persons, including us. All participants will be adults and in good health condition. Ethical concerns regarding data privacy are not expected because we do not collect data which can be rooted back to the participant. Although the exact setup needs to be determined, we consider a small number of repetitions for each person.
+
+\subsection{Development of a Prototype}
 \label{sect:implementation}
 We implement our own software for Android operating system\cite{Android}. The integrated development environment for our application and to deploy it to the mobile device is Android Studio \cite{Android_Studio} . We decided to use Java programming language \cite{Java} for this project. Our test device is a Xiaomi Redmi Note 4 mobile phone \cite{Redmi_Note4} and its inbuilt measurement units. A second device is a Motorola G5 Plus \cite{motoG5}.
 
