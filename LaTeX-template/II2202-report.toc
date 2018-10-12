@@ -7,6 +7,6 @@
 \contentsline {subsection}{\numberline {1.4}Ethics and sustainability}{2}{subsection.1.4}
 \contentsline {section}{\numberline {2}Method(s)}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Implementation}{3}{subsection.2.1}
-\contentsline {section}{\numberline {3}Results and Analysis}{3}{section.3}
-\contentsline {section}{\numberline {4}Discussion}{4}{section.4}
+\contentsline {section}{\numberline {3}Results and Analysis}{4}{section.3}
+\contentsline {section}{\numberline {4}Discussion}{5}{section.4}
 \contentsline {section}{\numberline {A}Insensible Approximation}{6}{appendix.A}
