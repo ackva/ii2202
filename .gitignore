@@ -1,10 +1,6 @@
 # tbd
-LaTeX-template/*.log
-LaTeX-template/auto/
-LaTeX-template/PaxHeaders.29013/
-LaTeX-template/*.aux
-LaTeX-template/*.bbl
-LaTeX-template/*.blg
-LaTeX-template/*.pdf
-LaTeX-template/*.gz
-LaTeX-template/*.toc
+/LaTeX-template/*
+/LaTeX-template/auto/*
+/LaTeX-template/PaxHeaders.29013/*
+!/LaTeX-template/*.bib
+!/LaTeX-template/*.tex

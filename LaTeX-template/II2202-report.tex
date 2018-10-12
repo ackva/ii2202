@@ -202,7 +202,7 @@ The method of this project is empirical prototyping and an experiment. A regular
 \subsection{Experiment}
 \label{sect:experiment}
 
-In order to test the prototype, we will conduct experiments, rather than rely on simulations, e.g. an Android studio development environment. We rather ask users to move items between two containers. The following setup is made: placing two square boxes of tens of centimeters close to each other. Using the hand with the “wristband” (smartphone attached to wrist), the balls in one container are grabbed and moved to the other container one by one. Negative tests are done, too. In this case, the items will be deliberately moved to a wrong place outside of the container. The app will detect if the placement is correct or not. We will consider a video recording of the experiment. We want to collect the data on the mobile device after every try.
+In order to test the prototype, we will conduct experiments, rather than rely on simulations, e.g. an Android studio development environment. We rather ask users to move items between two containers. The following setup is made: placing two square boxes of tens of centimeters close to each other. Using the hand with the “wristband” (smartphone attached to wrist), the balls in one container are grabbed and moved to the other container one by one. Negative tests are done, too. In this case, the items will be deliberately moved to a wrong place outside of the container. The app will detect if the placement is correct or not. We will consider a video recording of the experiment. We want to collect the data on the mobile device after every try. This will be saved in log files for analysis.
 Furthermore, publications will be analyzed in order to have a clear understanding of the current technologies used.
 \\
 \\
@@ -227,17 +227,15 @@ We implement our own software for Android operating system\cite{Android}. The in
 \label{sec:results}
 
 Up until now, we have run our newly developed app a few times and tested it by moving the phone without any complex setup. Fig.~\ref{fig:app1} shows an example picture of the result we can see on the phone screen after the measurement ends. Right now, the app needs more development but we can see on the upper graph that the phone was moved along the x-axis. The figure shows that the displacement was around one meter. The lower graph shows that there was a slight change of position along the y-axis which could also be just error. Under the graphs, we can see four numbers, which are currently not well-divided but the first two show the acceleration data of the x and y axis, respectively. The last two show the change of position in these axises. Finally, at the bottom, we can see the real-time acceleration of the phone.
-\\
-\\
-In conclusion, our current achievements are a position tracker algorithm and the visualization of the results. We can measure the approximate distance of movements, although we have not yet scientifically validated the accuracy. More tests are needed to be able to conduct a thorough analysis on the gathered data.
-
-\begin{figure}[!]
+\begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{figures/app1}
+		\includegraphics[width=0.3\textwidth]{figures/app1}
 		\caption{Screenshot of the position tracker app after conducting the test (own representation)}
 		\label{fig:app1}
 	\end{center}
 \end{figure}
+
+In conclusion, our current achievements are a position tracker algorithm and the visualization of the results. We can measure the approximate distance of movements, although we have not yet scientifically validated the accuracy. More tests are needed to be able to conduct a thorough analysis on the gathered data.
 
 \section{Discussion}
 \label{sec:discussion}
