@@ -188,7 +188,12 @@ Our hypothesis is that IMU would be precise enough to detect placing an item had
 \subsection{Ethics and sustainability}
 \label{sect:ethics}
 
-Regarding ethics and sustainability aspects of introducing wristbands with tracking capabilities for employees, several questions and side effects arise. From an ethical perspective, there are three main concerns: i) to what extend is the privacy of an employee guaranteed? ii) Is the employer able to abuse these tracking capabilities and will he use them? iii) Do employees have the possibility to pause or stop the tracking mode? Are they even allowed to take off the bracelet?
+Regarding ethics and sustainability aspects of introducing wristbands with tracking capabilities for employees, several questions and side effects arise. From an ethical perspective, there are three main concerns: 
+\begin{itemize}
+	\item to what extend is the privacy of an employee guaranteed?
+	\item Is the employer able to abuse these tracking capabilities and will he use them?
+	\item Do employees have the possibility to pause or stop the tracking mode? Are they even allowed to take off the bracelet?
+\end{itemize}
 The sustainability aspects of wristbands affect the bracelet itself rather than the employees. Subject of investigation is the production with regards to the environmental-friendliness. This covers the production line as well as the usage of recyclable materials for the wristband (e.g. leather or bio-degradable polymers). Finally, it can be questioned what happens when a device is worn off or its battery needs replacement. In this case, the device's modularity plays an important role.
 
 \section{Method(s)}
@@ -198,7 +203,7 @@ The sustainability aspects of wristbands affect the bracelet itself rather than 
 The method of this project is empirical prototyping. A regular smartphone will be used for the app. Simple software will run on the device that will analyze the sensor output data. Creating our own microprocessor (Arduino) device would require more time than is available during the course. We believe a smartphone is the best way to approach this problem as we already have such a device and it already contains the IMU and easy to write applications for this Android smartphone.
 \\
 \\
-In order to test the prototype, we will conduct experiments, rather than rely on simulations, e.g. an Android studio development environment. We rather ask users to move items between two containers. The following setup is made: placing two square boxes of tens of centimeters close to each other. Using the hand with the “wristband” (smartphone attached to wrist), the balls in one container are grabbed and moved to the other container one by one. Negative tests are done, too. (----- EXPLAIN THIS!!!! ------) The app will detect if the placement is correct or not. These experiments will be recorded (---- Will you make a video?? ----) and analyzed.
+In order to test the prototype, we will conduct experiments, rather than rely on simulations, e.g. an Android studio development environment. We rather ask users to move items between two containers. The following setup is made: placing two square boxes of tens of centimeters close to each other. Using the hand with the “wristband” (smartphone attached to wrist), the balls in one container are grabbed and moved to the other container one by one. Negative tests are done, too. In this case, the items will be deliberately moved to a wrong place outside of the container. The app will detect if the placement is correct or not. We will consider a video recording of the experiment. We want to collect the data on the mobile device after every try.
 Furthermore, publications will be analyzed in order to have a clear understanding of the current technologies used.
 \\
 \\
