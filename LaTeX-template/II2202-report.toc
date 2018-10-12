@@ -1,5 +1,5 @@
-\babel@toc {english}{}
-\babel@toc {english}{}
+\select@language {english}
+\select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Problem Statement}{2}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Theoretical framework/literature study}{2}{subsection.1.2}
