@@ -92,6 +92,14 @@ H.-J. Lee and S.~Jung, ``Gyro sensor drift compensation by kalman filter to
   \url{https://doi.org/10.1109/ICIT.2009.4939502}
 \BIBentrySTDinterwordspacing
 
+\bibitem{QiYongbin2014Awwu}
+Y.~Qi, C.~B. Soh, E.~Gunawan, and K.-S. Low, ``\BIBforeignlanguage{eng}{A
+  wearable wireless ultrasonic sensor network for human arm motion tracking},''
+  \emph{\BIBforeignlanguage{eng}{Conference proceedings : Annual International
+  Conference of the IEEE Engineering in Medicine and Biology Society. IEEE
+  Engineering in Medicine and Biology Society. Annual Conference}}, vol. 2014,
+  2014.
+
 \bibitem{Android}
 \url{https://www.android.com/}, last accessed on 10-10-2018.
 
