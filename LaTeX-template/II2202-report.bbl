@@ -44,18 +44,17 @@ A.~{Daria Battini}, {Martina Calzavara} and {Fabio Sgarbossa}, ``A comparative
 
 \bibitem{schall2016}
 \BIBentryALTinterwordspacing
-Z.~M. {Wenjin Tao} and {Zhaozheng Yin}, ``Accuracy and repeatability of an
-  inertial measurement unit system for field-based occupational studies,''
-  \emph{Ergonomics}, vol.~59, p. 591–602, Apr. 2016. [Online]. Available:
-  \url{DOI: 10.1080/00140139.2015.1079335}
+M.~{Wenjin Tao}, {Ze-Hao Lai} and {Zhaozheng Yin}, ``Accuracy and repeatability
+  of an inertial measurement unit system for field-based occupational
+  studies,'' \emph{Ergonomics}, vol.~59, p. 591–602, Apr. 2016. [Online].
+  Available: \url{DOI: 10.1080/00140139.2015.1079335}
 \BIBentrySTDinterwordspacing
 
 \bibitem{tao2018}
 \BIBentryALTinterwordspacing
-M.~{Wenjin Tao}, {Ze-Hao Lai} and {Zhaozheng Yin}, ``Worker activity
-  recognition in smart manufacturing using imu and semg signals with
-  convolutional neural networks,'' \emph{Procedia Manufacturing}, vol.~26, pp.
-  1159--1166, Apr. 2017. [Online]. Available: \url{DOI:
+------, ``Worker activity recognition in smart manufacturing using imu and semg
+  signals with convolutional neural networks,'' \emph{Procedia Manufacturing},
+  vol.~26, pp. 1159--1166, Apr. 2017. [Online]. Available: \url{DOI:
   10.1016/j.promfg.2018.07.152}
 \BIBentrySTDinterwordspacing
 
