@@ -139,7 +139,7 @@
 \begin{abstract}
 \label{sec:abstract}
 
-Your abstract here.
+Reducing the number of misplacements of items in warehouses has a huge impact on the effectiveness of a company. These human errors can cause a significant loss of money and time. Therefore, supporting warehouse staff is crucial. Current solutions mostly use hypersonic technology. In this paper we experiment with inertial measurement units to test if they are capable of fulfilling the same needs.
 
 \end{abstract}
 %%\clearpage
@@ -148,9 +148,6 @@ Your abstract here.
 \tableofcontents
 
 \section*{List of Acronyms and Abbreviations}
-\label{list-of-acronyms-and-abbreviations}
-
-This document requires readers to be familiar with terms and concepts described in \mbox{RFC~1235} \cite{john_ioannidis_coherent_1991}. For clarity we summarize some of these terms and give a short description of them before presenting them in next sections.
 
 \begin{basedescript}{\desclabelstyle{\pushlabel}\desclabelwidth{10em}}
 \item[IMU]					Inertial Measurement Unit
@@ -171,8 +168,6 @@ Wristband solutions mentioned in the previous section are either not dedicated t
 
 \subsection{Theoretical framework/literature study}
 \label{sect:framework}
-
-( ---- THIS SECTION HERE SEEMS A BIT OUT OF CONTEXT .... IT IS MORE "BACKGROUND" than "literature study")
 
 "An inertial measurement unit (IMU) is a small and portable device that combines information obtained from multiple electromechanical sensors (e.g. accelerometers, gyroscopes, and magnetometers)"\cite{schall2016}. The usage of IMU to detect human body motion has been proofed by several studies in the past \cite{schall2016} \cite{tao2018} \cite{georgi2015}.
 
@@ -226,7 +221,7 @@ We aim to conduct the experiment with a small number of persons, including us. A
 \label{sect:implementation}
 We implement our own software for Android operating system\cite{Android}. The integrated development environment for our application and to deploy it to the mobile device is Android Studio \cite{Android_Studio} . We decided to use Java programming language \cite{Java} for this project. Our test device is a Xiaomi Redmi Note 4 mobile phone \cite{Redmi_Note4} and its inbuilt measurement units. A second device is a Motorola G5 Plus \cite{motoG5}.
 
-We implement an application according for the mentioned system. ( ----- ????? -----) For this, we  take advatage of already existing libraries on GitHub to avoid implementing complex algorithms, especially Kalman filter \cite{Kalman_filter_book}. In our application, we use two GitHub \cite{github} projects. (-- ????? --) After collecting the sensor data, we use FSensor \cite{KalebKE_2018} to filter the data. This helps us filter out the noise and keep the useful data. This step is an important step as the raw data is very noisy, as mentioned in section XYZ (!!!!). . In the next step, the acceleration data is integrated twice to get the position. At this point, GraphView \cite{Graphview}, another GitHub repository, is used. It provides a simple way to plot data on the phone screen. This method displays the X and Y position data and the results can be viewed. After starting the app, the tracking starts and automatically stops after a few seconds, concluding the results. This time is long enough to perform the movement of placing the item from one container to another but short enough not to accumulate too much error increasing the accuracy of the final position.
+ For the implementation, we  take advatage of already existing libraries on GitHub to avoid implementing complex algorithms, especially Kalman filter \cite{Kalman_filter_book}. In our application, we use two GitHub \cite{github} projects. After collecting the sensor data, we use FSensor \cite{KalebKE_2018} to filter the data. This helps us filter out the noise and keep the useful data. This step is an important step as the raw data is very noisy, as mentioned in section ~\ref{sect:framework} . In the next step, the acceleration data is integrated twice to get the position. At this point, GraphView \cite{Graphview}, another GitHub repository, is used. It provides a simple way to plot data on the phone screen. This method displays the X and Y position data and the results can be viewed. After starting the app, the tracking starts and automatically stops after a few seconds, concluding the results. This time is long enough to perform the movement of placing the item from one container to another but short enough not to accumulate too much error increasing the accuracy of the final position.
 
 \section{Results and Analysis}
 \label{sec:results}
@@ -236,7 +231,7 @@ Up until now, we have run our newly developed app a few times and tested it by m
 \\
 In conclusion, our current achievements are a position tracker algorithm and the visualization of the results. More tests are needed to be able to conduct a thorough analysis on the gathered data.
 
-\begin{figure}[H]
+\begin{figure}[!]
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{figures/app1}
 		\caption{Image of the position tracker app after conducting the test}
