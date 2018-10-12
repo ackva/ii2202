@@ -1,1 +1,10 @@
 # tbd
+*.log
+LaTeX-template/auto/
+LaTeX-template/PaxHeaders.29013/
+*.aux
+*.bbl
+*.blg
+*.pdf
+*.gz
+*.toc
