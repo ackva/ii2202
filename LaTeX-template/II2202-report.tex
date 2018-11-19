@@ -139,7 +139,7 @@
 \begin{abstract}
 \label{sec:abstract}
 
-Reducing the number of misplaced items in warehouses has a huge impact on the efficiency of companies. These human errors can cause a significant loss of money and time. Therefore, supporting warehouse staff is crucial. Currently proposed solutions use ultrasonic technology. In this paper we experiment with inertial measurement units (IMU) to test if they are capable of fulfilling the same needs. Particularly, we develop a wristband protoype using commodity smartphone IMU. This device is validated in an experiment where items are between containers.
+Reducing the number of misplaced items in warehouses has a huge impact on the efficiency of companies. These human errors can cause a significant loss of money and time. Therefore, supporting warehouse staff is crucial. Currently proposed solutions use ultrasonic technology. In this paper we experiment with inertial measurement units (IMU) to test if they are capable of fulfilling the same needs. Particularly, we develop a wristband prototype using commodity smartphone IMU. This device is validated in an experiment where items are between containers.
 
 \end{abstract}
 %%\clearpage
@@ -171,43 +171,43 @@ Wristband solutions mentioned in the previous section are either not dedicated t
 
 "An inertial measurement unit (IMU) is a small and portable device that combines information obtained from multiple electromechanical sensors (e.g. accelerometers, gyroscopes, and magnetometers)"\cite{schall2016}. The usage of IMU to detect human body motion has been proofed by several studies in the past \cite{schall2016} \cite{tao2018} \cite{georgi2015}.
 
-All IMU sensors are sourceless, meaning that they work independently. However, especially in small wearable devices, they are very noisy. \cite{gallagher2004efficient}. A common method to reduce this noise is the Kalman  filter \cite{kalman1960new}. It allows to reduce the impact of the noise by mathematical calculations. Kalman also provides a prediction feature to correct the gyroscope drift \cite{Welch95anintroduction} \cite{Lee2009}.
+All IMU sensors are sourceless, meaning that they work independently. However, especially in small wearable devices, they are very noisy. \cite{gallagher2004efficient}. A common method to reduce this noise is the Kalman  filter \cite{kalman1960new}. It allows reducing the impact of the noise by mathematical calculations. Kalman also provides a prediction feature to correct the gyroscope drift \cite{Welch95anintroduction} \cite{Lee2009}.
 
 
 \subsection{Research questions, hypotheses}
 \label{sect:questions}
 
-Regarding at recent literature, we can see that several solutions exist for displacement tracking using ultrasonic sensors \cite{QiYongbin2014Awwu}. However, we would like to experiment with an IMU and find out if it is capable of executing similar measurements. 
-Our hypothesis is that IMU would be precise enough to detect placing an item had been inside the correct container or not. In this scenario we assume that the containers are around the size of 50-100 cm wide and long.
+Regarding recent literature, we can see that several solutions exist for displacement tracking using ultrasonic sensors \cite{QiYongbin2014Awwu}. However, we would like to experiment with an IMU and find out if it is capable of executing similar measurements. 
+Our hypothesis is that IMU would be precise enough to detect placing an item had been inside the correct container or not. In this scenario, we assume that the containers are around the size of 50-100 cm wide and long.
 
 \subsection{Ethics and sustainability}
 \label{sect:ethics}
 
 Regarding ethics and sustainability aspects of introducing wristbands with tracking capabilities for employees, several questions and side effects arise. From an ethical perspective, there are three main concerns: 
 \begin{itemize}
-	\item to what extend is the privacy of an employee guaranteed?
+	\item To what extent is the privacy of an employee guaranteed?
 	\item Is the employer able to abuse these tracking capabilities and will he use them?
 	\item Do employees have the possibility to pause or stop the tracking mode? Are they even allowed to take off the bracelet?
 \end{itemize}
-The sustainability aspects of wristbands affect the bracelet itself rather than the employees. Subject of investigation is the production with regards to the environmental-friendliness. This covers the production line as well as the usage of recyclable materials for the wristband (e.g. leather or bio-degradable polymers). Finally, it can be questioned what happens when a device is worn off or its battery needs replacement. In this case, the device's modularity plays an important role.
+The sustainability aspects of wristbands affect the bracelet itself rather than the employees. The subject of investigation is the production with regards to the environmental-friendliness. This covers the production line as well as the usage of recyclable materials for the wristband (e.g. leather or bio-degradable polymers). Finally, it can be questioned what happens when a device is worn off or its battery needs replacement. In this case, the modularity of the device plays an important role.
 
 \section{Method(s)}
 \label{sec:method}
 
 
-The method of this project is empirical prototyping and an experiment. A regular smartphone will be used for the app. Simple software will run on the device that will analyze the sensor output data. Creating our own microprocessor (Arduino) device would require more time than is available during the course. We believe a smartphone is the best way to approach this problem as we already have such a device and it already contains the IMU and easy to write applications for this Android smartphone.
+The method of this project is empirical prototyping and an experiment. A regular smartphone will be used for the app. The simple software will run on the device that will analyze the sensor output data. Creating our own microprocessor (Arduino) device would require more time than is available during the course. We believe a smartphone is the best way to approach this problem as we already have such a device and it already contains the IMU and easy to write applications for this Android smartphone.
 \\
 \\
 
 \subsection{Experiment}
 \label{sect:experiment}
 
-In order to test the prototype, we will conduct experiments, rather than rely on simulations, e.g. an Android studio development environment. We rather ask users to move items between two containers. The following setup is made: placing two square boxes of tens of centimeters close to each other. Using the hand with the “wristband” (smartphone attached to wrist), the balls in one container are grabbed and moved to the other container one by one. Negative tests are done, too. In this case, the items will be deliberately moved to a wrong place outside of the container. The app will detect if the placement is correct or not. We will consider a video recording of the experiment. We want to collect the data on the mobile device after every try. This will be saved in log files for analysis.
-Furthermore, publications will be analyzed in order to have a clear understanding of the current technologies used.
+In order to test the prototype, we will conduct experiments, rather than rely on simulations, e.g. an Android Studio development environment. We rather ask users to move items between two containers. The following setup is made: placing two square boxes of tens of centimeters close to each other. Using the hand with the “wristband” (smartphone attached to wrist), the balls in one container are grabbed and moved to the other container one by one. Negative tests are done, too. In this case, the items will be deliberately moved to a wrong place outside of the container. The app will detect if the placement is correct or not. We will consider a video recording of the experiment. Furthermore, we plan to collect the data on the mobile device after every try. This will be saved in log files for analysis.
+Moreover, publications will be analyzed in order to have a clear understanding of the current technologies used.
 \\
 \\
 
-\begin{figure}[!]
+\begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{figures/experiment_setup}
 		\caption{Setup of the experiment (own representation)}
@@ -219,19 +219,17 @@ We aim to conduct the experiment with a small number of persons, including us. A
 
 \subsection{Development of a Prototype}
 \label{sect:implementation}
-We implement our own software for Android operating system\cite{Android}. The integrated development environment for our application and to deploy it to the mobile device is Android Studio \cite{Android_Studio} . We decided to use Java programming language \cite{Java} for this project. Our test device is a Xiaomi Redmi Note 4 mobile phone \cite{Redmi_Note4} and its inbuilt measurement units. A second device is a Motorola G5 Plus \cite{motoG5}.
+We implement our own software for the Android operating system \cite{Android}. The integrated development environment for our application and to deploy it to the mobile device is Android Studio \cite{Android_Studio}. We decided to use the programming language Java \cite{Java} for this project. Our test device is a Xiaomi Redmi Note 4 mobile phone \cite{Redmi_Note4} and its inbuilt measurement units. A second device is a Motorola G5 Plus \cite{motoG5}.
 
- For the implementation, we  take advatage of already existing libraries on GitHub to avoid implementing complex algorithms, especially Kalman filter \cite{Kalman_filter_book}. In our application, we use two GitHub \cite{github} projects. After collecting the sensor data, we use FSensor \cite{KalebKE_2018} to filter the data. This helps us filter out the noise and keep the useful data. This step is an important step as the raw data is very noisy, as mentioned in section ~\ref{sect:framework} . In the next step, the acceleration data is integrated twice to get the position. At this point, GraphView \cite{Graphview}, another GitHub repository, is used. It provides a simple way to plot data on the phone screen. This method displays the X and Y position data and the results can be viewed. After starting the app, the tracking starts and automatically stops after a few seconds, concluding the results. This time is long enough to perform the movement of placing the item from one container to another but short enough not to accumulate too much error increasing the accuracy of the final position.
+ For the implementation, we  take advantage of already existing libraries on GitHub to avoid implementing complex algorithms, especially Kalman filter \cite{Kalman_filter_book}. In our application, we use two GitHub \cite{github} projects. After collecting the sensor data, we use FSensor \cite{KalebKE_2018} to filter the data. This helps us to minimize the noise and to keep the useful data. This step is important as the raw data is very noisy, as mentioned in section ~\ref{sect:framework} . In the next step, the acceleration data is integrated twice to get the position. At this point, GraphView \cite{Graphview}, another GitHub repository, is used. It provides a simple way to plot data on the phone screen. This method displays the X and Y position data and the results can be viewed. After starting the app, the tracking begins and automatically stops after a few seconds, concluding the results. This time is long enough to perform the movement of placing the item from one container to another but short enough not to accumulate too much error increasing the accuracy of the final position.
 
 \section{Results and Analysis}
 \label{sec:results}
 
-Up until now, we have run our newly developed app a few times and tested it by moving the phone without any complex setup. Fig.~\ref{fig:app1} shows an example picture of the result we can see on the phone screen after the measurement ends. Right now, the app needs more development but we can see on the upper graph that the phone was moved along the x-axis. The figure shows that the displacement was around one meter. The lower graph shows that there was a slight change of position along the y-axis which could also be just error. Under the graphs, we can see four numbers, which are currently not well-divided but the first two show the acceleration data of the x and y axis, respectively. The last two show the change of position in these axises. Finally, at the bottom, we can see the real-time acceleration of the phone.
-\\
-\\
-In conclusion, our current achievements are a position tracker algorithm and the visualization of the results. We can measure the approximate distance of movements, although we have not yet scientifically validated the accuracy. More tests are needed to be able to conduct a thorough analysis on the gathered data.
 
-\begin{figure}[!]
+Up until now, we have run our newly developed app a few times and tested it by moving the phone without any complex setup. Fig.~\ref{fig:app1} shows an example picture of the result we can see on the phone screen after the measurement ends. Right now, the app needs more development but we can see on the upper graph that the phone was moved along the x-axis. The figure shows that the displacement was around one meter. The lower graph shows that there was a slight change of position along the y-axis which could also be just error. Under the graphs, we can see four numbers, which are currently not well-divided but the first two show the acceleration data of the x and y-axis, respectively. The last two show the change of position in these axes. Finally, at the bottom, we can see the real-time acceleration of the phone.
+\begin{figure}[H]
+>>>>>>> 46a0fd4c5d475bfd31197fc3cf2dcb86495a824a
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{figures/app1}
 		\caption{Screenshot of the position tracker app after conducting the test (own representation)}
@@ -239,9 +237,14 @@ In conclusion, our current achievements are a position tracker algorithm and the
 	\end{center}
 \end{figure}
 
+In conclusion, our current achievements are a position tracker algorithm and the visualization of the results. We can measure the approximate distance of movements, although we have not yet scientifically validated the accuracy. More tests are needed to be able to conduct a thorough analysis of the gathered data.
+
+>>>>>>> 46a0fd4c5d475bfd31197fc3cf2dcb86495a824a
 \section{Discussion}
 \label{sec:discussion}
 For a proper discussion, it is necessary to fully test the prototype and to conduct the experiment.
+
+\newpage
 
 \bibliography{II2202-report}
 %%\bibliographystyle{IEEEtran}
